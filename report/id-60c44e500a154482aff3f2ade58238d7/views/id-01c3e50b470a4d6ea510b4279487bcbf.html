@@ -1,0 +1,319 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Application Structure</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Application Structure</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-application_structure"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_application_structure" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-01c3e50b470a4d6ea510b4279487bcbf.png" alt="Application Structure" usemap="#id-01c3e50b470a4d6ea510b4279487bcbfmap"/>
+			   <map name="id-01c3e50b470a4d6ea510b4279487bcbfmap">
+				  		<area shape="rect" coords="106,480,226,535" href="../elements/id-222f574112734c3d8f871ca00ee4d8da.html"  target="element">
+				  		<area shape="rect" coords="886,468,1006,523" href="../elements/id-f44139252b01478abc8fcbf0553b333d.html"  target="element">
+				  		<area shape="rect" coords="1330,10,1450,65" href="../elements/id-12b7e455e1d145f7817f9ccf41d7d396.html"  target="element">
+				  		<area shape="rect" coords="742,360,862,415" href="../elements/id-d28e798181e04f01a89c76cc332bcfb1.html"  target="element">
+				  		<area shape="rect" coords="886,360,1006,415" href="../elements/id-c73c303dd7e749c0bd91242bfef2e044.html"  target="element">
+				  		<area shape="rect" coords="10,108,130,163" href="../elements/id-d7726c6b1b4b42f8b3dadfc794ae92a4.html"  target="element">
+				  		<area shape="rect" coords="262,108,382,163" href="../elements/id-3df760a230a14acdbacfd4f8f7735ebe.html"  target="element">
+				  		<area shape="rect" coords="742,216,862,271" href="../elements/id-9b4ea2d66ef548f5bbb0fc82f9626c15.html"  target="element">
+				  		<area shape="rect" coords="886,216,1006,271" href="../elements/id-5f935b4276724de98a9f0afab584438a.html"  target="element">
+				  		<area shape="rect" coords="1042,216,1162,271" href="../elements/id-97e8ca36e45c405e88e410b5132915fc.html"  target="element">
+				  		<area shape="rect" coords="1186,216,1306,271" href="../elements/id-93055975adc2465087c289ecb2a19384.html"  target="element">
+				  		<area shape="rect" coords="742,12,862,67" href="../elements/id-7a037d68d54b4c2387c199403b8a785f.html"  target="element">
+				  		<area shape="rect" coords="886,12,1006,67" href="../elements/id-b0795b1741224ce5ac8989e00dc986c4.html"  target="element">
+				  		<area shape="rect" coords="1042,10,1162,65" href="../elements/id-291ffee584d74bf994586e844b24a0fd.html"  target="element">
+				  		<area shape="rect" coords="1186,12,1306,67" href="../elements/id-95a2b3effc9e40408d92d9cb4b4eceb9.html"  target="element">
+				  		<area shape="rect" coords="418,108,538,163" href="../elements/id-69c82c7a343646298f43150eed6355d1.html"  target="element">
+				  		<area shape="rect" coords="586,108,706,163" href="../elements/id-5e749acaae31451eb69cfecca42e4955.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-5e749acaae31451eb69cfecca42e4955.html" target="element"> Hasura </a> </td>
+											    <td> <a href="../elements/id-5e749acaae31451eb69cfecca42e4955.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-69c82c7a343646298f43150eed6355d1.html" target="element"> Hasura Graphql API </a> </td>
+											    <td> <a href="../elements/id-69c82c7a343646298f43150eed6355d1.html" target="element" class="i18n-elementtype-ApplicationInterface"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-95a2b3effc9e40408d92d9cb4b4eceb9.html" target="element"> Strapi </a> </td>
+											    <td> <a href="../elements/id-95a2b3effc9e40408d92d9cb4b4eceb9.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-291ffee584d74bf994586e844b24a0fd.html" target="element"> Strapi Graphql API </a> </td>
+											    <td> <a href="../elements/id-291ffee584d74bf994586e844b24a0fd.html" target="element" class="i18n-elementtype-ApplicationInterface"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-b0795b1741224ce5ac8989e00dc986c4.html" target="element"> Strapi Graphql Proxy </a> </td>
+											    <td> <a href="../elements/id-b0795b1741224ce5ac8989e00dc986c4.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-7a037d68d54b4c2387c199403b8a785f.html" target="element"> Strapi Graphql Proxy Graphql API </a> </td>
+											    <td> <a href="../elements/id-7a037d68d54b4c2387c199403b8a785f.html" target="element" class="i18n-elementtype-ApplicationInterface"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-93055975adc2465087c289ecb2a19384.html" target="element"> EasyAppointments </a> </td>
+											    <td> <a href="../elements/id-93055975adc2465087c289ecb2a19384.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-97e8ca36e45c405e88e410b5132915fc.html" target="element"> EasyAppointments REST API </a> </td>
+											    <td> <a href="../elements/id-97e8ca36e45c405e88e410b5132915fc.html" target="element" class="i18n-elementtype-ApplicationInterface"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-5f935b4276724de98a9f0afab584438a.html" target="element"> EasyAppointments Graphql Proxy </a> </td>
+											    <td> <a href="../elements/id-5f935b4276724de98a9f0afab584438a.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-9b4ea2d66ef548f5bbb0fc82f9626c15.html" target="element"> EasyAppointments Graphql Proxy Graphql API </a> </td>
+											    <td> <a href="../elements/id-9b4ea2d66ef548f5bbb0fc82f9626c15.html" target="element" class="i18n-elementtype-ApplicationInterface"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-3df760a230a14acdbacfd4f8f7735ebe.html" target="element"> Next Frontend Server </a> </td>
+											    <td> <a href="../elements/id-3df760a230a14acdbacfd4f8f7735ebe.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-d7726c6b1b4b42f8b3dadfc794ae92a4.html" target="element"> React Client App </a> </td>
+											    <td> <a href="../elements/id-d7726c6b1b4b42f8b3dadfc794ae92a4.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-c73c303dd7e749c0bd91242bfef2e044.html" target="element"> Docstay Graphql Server </a> </td>
+											    <td> <a href="../elements/id-c73c303dd7e749c0bd91242bfef2e044.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-d28e798181e04f01a89c76cc332bcfb1.html" target="element"> Docstay Graphql Server Graphl API </a> </td>
+											    <td> <a href="../elements/id-d28e798181e04f01a89c76cc332bcfb1.html" target="element" class="i18n-elementtype-ApplicationInterface"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-12b7e455e1d145f7817f9ccf41d7d396.html" target="element"> Google Cloud Storage </a> </td>
+											    <td> <a href="../elements/id-12b7e455e1d145f7817f9ccf41d7d396.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-f44139252b01478abc8fcbf0553b333d.html" target="element"> Stripe Backend SDK </a> </td>
+											    <td> <a href="../elements/id-f44139252b01478abc8fcbf0553b333d.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-222f574112734c3d8f871ca00ee4d8da.html" target="element"> Stripe Client SDK </a> </td>
+											    <td> <a href="../elements/id-222f574112734c3d8f871ca00ee4d8da.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-97090025a40d495aa1b258303c9a53a2.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-97090025a40d495aa1b258303c9a53a2.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																		<td> <a href="../elements/id-5e749acaae31451eb69cfecca42e4955.html" target="element"> Hasura </a> </td>
+																		<td> <a href="../elements/id-69c82c7a343646298f43150eed6355d1.html" target="element"> Hasura Graphql API </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-99edb39656d44f9b86c38f125be45819.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-99edb39656d44f9b86c38f125be45819.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/id-69c82c7a343646298f43150eed6355d1.html" target="element"> Hasura Graphql API </a> </td>
+																		<td> <a href="../elements/id-3df760a230a14acdbacfd4f8f7735ebe.html" target="element"> Next Frontend Server </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-0f15d8588ec649439fc846228b90c940.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-0f15d8588ec649439fc846228b90c940.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																		<td> <a href="../elements/id-95a2b3effc9e40408d92d9cb4b4eceb9.html" target="element"> Strapi </a> </td>
+																		<td> <a href="../elements/id-291ffee584d74bf994586e844b24a0fd.html" target="element"> Strapi Graphql API </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-cc7c31a7fefc46fcaadaa30799e0d7ba.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-cc7c31a7fefc46fcaadaa30799e0d7ba.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/id-291ffee584d74bf994586e844b24a0fd.html" target="element"> Strapi Graphql API </a> </td>
+																		<td> <a href="../elements/id-b0795b1741224ce5ac8989e00dc986c4.html" target="element"> Strapi Graphql Proxy </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-12575ae91c2a4a4baf2d2306b3fb5116.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-12575ae91c2a4a4baf2d2306b3fb5116.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																		<td> <a href="../elements/id-b0795b1741224ce5ac8989e00dc986c4.html" target="element"> Strapi Graphql Proxy </a> </td>
+																		<td> <a href="../elements/id-7a037d68d54b4c2387c199403b8a785f.html" target="element"> Strapi Graphql Proxy Graphql API </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-2c784e6c19894c38bca4498ab441a545.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-2c784e6c19894c38bca4498ab441a545.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/id-7a037d68d54b4c2387c199403b8a785f.html" target="element"> Strapi Graphql Proxy Graphql API </a> </td>
+																		<td> <a href="../elements/id-5e749acaae31451eb69cfecca42e4955.html" target="element"> Hasura </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-e565234b8b464599b5c7e34ac7c0bd77.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e565234b8b464599b5c7e34ac7c0bd77.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																		<td> <a href="../elements/id-93055975adc2465087c289ecb2a19384.html" target="element"> EasyAppointments </a> </td>
+																		<td> <a href="../elements/id-97e8ca36e45c405e88e410b5132915fc.html" target="element"> EasyAppointments REST API </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-e74e1d2720954c1da31bd3f2031741c8.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-e74e1d2720954c1da31bd3f2031741c8.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/id-97e8ca36e45c405e88e410b5132915fc.html" target="element"> EasyAppointments REST API </a> </td>
+																		<td> <a href="../elements/id-5f935b4276724de98a9f0afab584438a.html" target="element"> EasyAppointments Graphql Proxy </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-03cf0545393b4f138cd0e1c7592649ec.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-03cf0545393b4f138cd0e1c7592649ec.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																		<td> <a href="../elements/id-5f935b4276724de98a9f0afab584438a.html" target="element"> EasyAppointments Graphql Proxy </a> </td>
+																		<td> <a href="../elements/id-9b4ea2d66ef548f5bbb0fc82f9626c15.html" target="element"> EasyAppointments Graphql Proxy Graphql API </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-be4e72c26e664bdab08eda6403a89cfb.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-be4e72c26e664bdab08eda6403a89cfb.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/id-9b4ea2d66ef548f5bbb0fc82f9626c15.html" target="element"> EasyAppointments Graphql Proxy Graphql API </a> </td>
+																		<td> <a href="../elements/id-5e749acaae31451eb69cfecca42e4955.html" target="element"> Hasura </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-d6b467aa71ad47cbba6d72afc303bd17.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-d6b467aa71ad47cbba6d72afc303bd17.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/id-3df760a230a14acdbacfd4f8f7735ebe.html" target="element"> Next Frontend Server </a> </td>
+																		<td> <a href="../elements/id-d7726c6b1b4b42f8b3dadfc794ae92a4.html" target="element"> React Client App </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-f96c2876a8764d46a0b3a39b65bc4c03.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-f96c2876a8764d46a0b3a39b65bc4c03.html" target="element" class="i18n-elementtype-RealizationRelationship"></a> </td>
+																		<td> <a href="../elements/id-c73c303dd7e749c0bd91242bfef2e044.html" target="element"> Docstay Graphql Server </a> </td>
+																		<td> <a href="../elements/id-d28e798181e04f01a89c76cc332bcfb1.html" target="element"> Docstay Graphql Server Graphl API </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-11fc95f746a841c193569b94eb52a597.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-11fc95f746a841c193569b94eb52a597.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/id-d28e798181e04f01a89c76cc332bcfb1.html" target="element"> Docstay Graphql Server Graphl API </a> </td>
+																		<td> <a href="../elements/id-5e749acaae31451eb69cfecca42e4955.html" target="element"> Hasura </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-61f4a0a5c213459aba6e04707dc484af.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-61f4a0a5c213459aba6e04707dc484af.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/id-12b7e455e1d145f7817f9ccf41d7d396.html" target="element"> Google Cloud Storage </a> </td>
+																		<td> <a href="../elements/id-95a2b3effc9e40408d92d9cb4b4eceb9.html" target="element"> Strapi </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-9b9931daf683426680429f7af40a622a.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-9b9931daf683426680429f7af40a622a.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/id-f44139252b01478abc8fcbf0553b333d.html" target="element"> Stripe Backend SDK </a> </td>
+																		<td> <a href="../elements/id-c73c303dd7e749c0bd91242bfef2e044.html" target="element"> Docstay Graphql Server </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-cc0be2cb4a4544729576b555fb9269aa.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-cc0be2cb4a4544729576b555fb9269aa.html" target="element" class="i18n-elementtype-ServingRelationship"></a> </td>
+																		<td> <a href="../elements/id-222f574112734c3d8f871ca00ee4d8da.html" target="element"> Stripe Client SDK </a> </td>
+																		<td> <a href="../elements/id-d7726c6b1b4b42f8b3dadfc794ae92a4.html" target="element"> React Client App </a> </td>
+																	</tr>
+
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
